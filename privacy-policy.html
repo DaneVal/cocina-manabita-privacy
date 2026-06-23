@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — MR Cocina Manabita</title>
+<style>
+  :root {
+    --ink: #1a1d29;
+    --ink-soft: #4a4f5e;
+    --paper: #fbfaf7;
+    --rule: #e3e0d8;
+    --accent: #c25a2e;
+    --accent-soft: #f7ede7;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+  .toggle {
+    display: flex; gap: 0.4rem; justify-content: flex-end;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin-bottom: 2.5rem;
+  }
+  .toggle button {
+    font: inherit; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em;
+    border: 1px solid var(--rule); background: #fff; color: var(--ink-soft);
+    padding: 0.4rem 0.9rem; border-radius: 999px; cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .toggle button[aria-pressed="true"] {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+  .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.72rem;
+    font-weight: 600; color: var(--accent); margin: 0 0 0.75rem;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 2.7rem); line-height: 1.1; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+  .meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 2.5rem;
+    padding-bottom: 2rem; border-bottom: 1px solid var(--rule);
+  }
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.05rem; font-weight: 700; margin: 2.8rem 0 0.4rem;
+    display: flex; align-items: baseline; gap: 0.7rem;
+  }
+  h2 .num { color: var(--accent); font-variant-numeric: tabular-nums; font-size: 0.85rem; font-weight: 700; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); }
+  ul { margin: 0 0 1rem; padding-left: 0; list-style: none; }
+  li { position: relative; padding-left: 1.4rem; margin-bottom: 0.6rem; }
+  li::before {
+    content: ""; position: absolute; left: 0.1rem; top: 0.65em;
+    width: 6px; height: 6px; background: var(--accent); border-radius: 50%;
+  }
+  .data-card {
+    background: var(--accent-soft); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.2rem 0;
+  }
+  .data-card strong { color: var(--ink); }
+  .data-card p:last-child { margin-bottom: 0; }
+  .lang { display: none; }
+  .lang.active { display: block; }
+  footer {
+    margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.85rem; color: var(--ink-soft);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ecebe6; --ink-soft: #a8a89f; --paper: #16181d;
+      --rule: #2c2f37; --accent: #e0875a; --accent-soft: #2a201b;
+    }
+    .toggle button { background: #1c1f25; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="toggle">
+    <button id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
+    <button id="btn-es" aria-pressed="false" onclick="setLang('es')">Español</button>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div class="lang active" id="lang-en">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>MR Cocina Manabita</h1>
+    <p class="meta">
+      Published by <strong>Dane Val Devs</strong><br>
+      Package ID: com.DaneValDevs.Discover · Platform: Meta Quest<br>
+      Effective date: 22 June 2026 · Last updated: 22 June 2026
+    </p>
+
+    <p>
+      This Privacy Policy explains how <strong>Dane Val Devs</strong> ("we," "us," or "our")
+      handles information when you use <strong>MR Cocina Manabita</strong> (the "App"), a mixed-reality
+      multiplayer application for Meta Quest devices. The App is built for educational and cultural use.
+      By using the App, you agree to the practices described here.
+    </p>
+
+    <h2><span class="num">01</span> Information we collect</h2>
+    <p>The App collects only the data needed to run the experience. We do not collect personal identifiers.</p>
+
+    <div class="data-card">
+      <p><strong>Device and session data (non-personal)</strong></p>
+      <p>
+        Head and hand position to drive gameplay (catching ingredients, interacting with the kitchen) —
+        used locally and within the active multiplayer session only, and not stored. Physical room scan
+        (Meta MR Utility Kit) to detect surfaces such as the ceiling and generate gameplay points — processed
+        on-device and not sent to external servers. Spatial anchors for synchronized placement between players,
+        stored via Meta Cloud Storage and deleted when the session ends.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Multiplayer session data</strong></p>
+      <p>
+        A game session ID generated by AppSheet to match players (contains no personal data); your session role
+        (host or client), stored locally in device preferences; and session state (started / finished), recorded
+        in AppSheet when a session ends.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Voice</strong></p>
+      <p>
+        During a session, voice audio is transmitted in real time between players via Photon Voice so you can
+        talk to other participants. Voice is used only for live in-session communication and is not recorded or
+        stored by us.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Local preferences and diagnostics</strong></p>
+      <p>
+        Local settings (testing mode, preferred role, match duration, automatic recipe mode, last session ID)
+        are stored on your device only. A diagnostic log file is written to the app's local storage on the device;
+        it is overwritten each time the App starts, is never transmitted automatically, and is only accessible to
+        the developer via a physical USB (ADB) connection.
+      </p>
+    </div>
+
+    <h2><span class="num">02</span> Data we do NOT collect</h2>
+    <ul>
+      <li>Name, email, or any personal identification of the user.</li>
+      <li>GPS or precise location.</li>
+      <li>Payment data.</li>
+      <li>Browsing history.</li>
+      <li>User photos or videos.</li>
+    </ul>
+
+    <h2><span class="num">03</span> How we use your information</h2>
+    <ul>
+      <li>To provide and operate the App's core gameplay.</li>
+      <li>To enable real-time multiplayer sessions and voice chat between players.</li>
+      <li>To correctly place virtual content within your physical space.</li>
+      <li>To maintain the safety, stability, and performance of the experience.</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your data, and we do not use it for advertising or profiling.</p>
+
+    <h2><span class="num">04</span> Third-party services</h2>
+    <p>The App relies on the following services. Data shared is limited to what each service needs to function.</p>
+    <div class="data-card">
+      <p><strong>Photon Engine (Photon Fusion &amp; Photon Voice)</strong></p>
+      <p>
+        Powers real-time multiplayer state synchronization and in-session voice chat. To connect players, Photon
+        may process technical data such as your IP address and a session/room identifier. See
+        <a href="https://www.photonengine.com/en-US/Photon/modal/privacy" target="_blank" rel="noopener">Photon's privacy policy</a>.
+      </p>
+    </div>
+    <div class="data-card">
+      <p><strong>Meta Platform (Oculus)</strong></p>
+      <p>
+        Provides device authentication, spatial anchors, and passthrough mixed reality. Governed by
+        <a href="https://www.meta.com/legal/quest/privacy-policy/" target="_blank" rel="noopener">Meta's privacy policy</a>.
+      </p>
+    </div>
+    <div class="data-card">
+      <p><strong>AppSheet (Google)</strong></p>
+      <p>
+        Manages game sessions and turns. Governed by the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+      </p>
+    </div>
+
+    <h2><span class="num">05</span> Device permissions</h2>
+    <ul>
+      <li><strong>Internet</strong> — multiplayer connectivity (Photon) and session management (AppSheet).</li>
+      <li><strong>Microphone</strong> — voice chat between players (Photon Voice).</li>
+      <li><strong>Spatial data / Scene</strong> — room scan to detect ceiling and walls for gameplay.</li>
+      <li><strong>Eye tracking (optional)</strong> — not actively used by the App; may be requested by the Meta SDK.</li>
+    </ul>
+    <p>You can manage these permissions at any time in your Meta Quest device settings.</p>
+
+    <h2><span class="num">06</span> Data retention and deletion</h2>
+    <ul>
+      <li>AppSheet session records: only the final session state is stored; no individual gameplay data is accumulated.</li>
+      <li>Spatial anchors: temporary and tied to the active session; deleted when the session ends.</li>
+      <li>Local preferences: persist on the device until you uninstall the App or clear preferences from the admin panel.</li>
+      <li>Diagnostic log: overwritten on each launch and never transmitted.</li>
+    </ul>
+    <p>To request deletion of any data associated with you, contact us at the address below.</p>
+
+    <h2><span class="num">07</span> Children's privacy</h2>
+    <p>
+      The App is intended for educational and cultural contexts. It is not specifically directed at children under 13,
+      though it may be used in supervised settings for pedagogical purposes. We do not knowingly collect personal data
+      from children.
+    </p>
+
+    <h2><span class="num">08</span> Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above.
+      Continued use of the App after changes take effect constitutes acceptance of the updated policy.
+    </p>
+
+    <h2><span class="num">09</span> Contact us</h2>
+    <p>
+      <strong>Dane Val Devs</strong><br>
+      Email: <a href="mailto:danevaldevs@outlook.es">danevaldevs@outlook.es</a>
+    </p>
+
+    <footer>© 2026 Dane Val Devs. All rights reserved.</footer>
+  </div>
+
+  <!-- ============ ESPAÑOL ============ -->
+  <div class="lang" id="lang-es">
+    <p class="eyebrow">Política de Privacidad</p>
+    <h1>MR Cocina Manabita</h1>
+    <p class="meta">
+      Publicada por <strong>Dane Val Devs</strong><br>
+      Package ID: com.DaneValDevs.Discover · Plataforma: Meta Quest<br>
+      Fecha de entrada en vigor: 22 junio 2026 · Última actualización: 22 junio 2026
+    </p>
+
+    <p>
+      Esta Política de Privacidad explica cómo <strong>Dane Val Devs</strong> ("nosotros") trata la información
+      cuando usas <strong>MR Cocina Manabita</strong> (la "App"), una aplicación multijugador de realidad mixta
+      para dispositivos Meta Quest. La App está diseñada para uso educativo y cultural. Al usar la App, aceptas
+      las prácticas descritas aquí.
+    </p>
+
+    <h2><span class="num">01</span> Información que recopilamos</h2>
+    <p>La App recopila únicamente los datos necesarios para funcionar. No recopilamos identificadores personales.</p>
+
+    <div class="data-card">
+      <p><strong>Datos de dispositivo y sesión (no personales)</strong></p>
+      <p>
+        Posición de la cabeza y las manos para las mecánicas de juego (capturar ingredientes, interactuar con la
+        cocina) — se usa solo localmente y dentro de la sesión multijugador activa, y no se almacena. Escaneo de la
+        habitación física (Meta MR Utility Kit) para detectar superficies como el techo y generar puntos de juego —
+        se procesa en el dispositivo y no se envía a servidores externos. Anchors espaciales para la colocación
+        sincronizada entre jugadores, almacenados mediante Meta Cloud Storage y eliminados al cerrar la sesión.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Datos de sesión multijugador</strong></p>
+      <p>
+        Un ID de sesión generado por AppSheet para emparejar jugadores (no contiene datos personales); tu rol en la
+        sesión (host o cliente), almacenado localmente en las preferencias del dispositivo; y el estado de la sesión
+        (iniciada / terminada), registrado en AppSheet al finalizar.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Voz</strong></p>
+      <p>
+        Durante una sesión, el audio de voz se transmite en tiempo real entre jugadores mediante Photon Voice para
+        que puedas hablar con otros participantes. La voz se usa solo para la comunicación en vivo durante la sesión
+        y no es grabada ni almacenada por nosotros.
+      </p>
+    </div>
+
+    <div class="data-card">
+      <p><strong>Preferencias locales y diagnóstico</strong></p>
+      <p>
+        Los ajustes locales (modo testing, rol preferido, duración de partida, modo automático de recetas, ID de la
+        última sesión) se guardan solo en tu dispositivo. Se escribe un archivo de registro de diagnóstico en el
+        almacenamiento local de la App; se sobrescribe cada vez que la App se inicia, nunca se transmite
+        automáticamente y solo es accesible para el desarrollador mediante conexión física USB (ADB).
+      </p>
+    </div>
+
+    <h2><span class="num">02</span> Datos que NO recopilamos</h2>
+    <ul>
+      <li>Nombre, email o cualquier identificación personal del usuario.</li>
+      <li>Ubicación GPS o precisa.</li>
+      <li>Datos de pago.</li>
+      <li>Historial de navegación.</li>
+      <li>Fotos o videos del usuario.</li>
+    </ul>
+
+    <h2><span class="num">03</span> Cómo usamos tu información</h2>
+    <ul>
+      <li>Para proporcionar y operar las mecánicas principales de la App.</li>
+      <li>Para habilitar sesiones multijugador en tiempo real y el chat de voz entre jugadores.</li>
+      <li>Para colocar correctamente el contenido virtual en tu espacio físico.</li>
+      <li>Para mantener la seguridad, estabilidad y rendimiento de la experiencia.</li>
+    </ul>
+    <p>No <strong>vendemos</strong> tus datos ni los usamos para publicidad o perfilado.</p>
+
+    <h2><span class="num">04</span> Servicios de terceros</h2>
+    <p>La App utiliza los siguientes servicios. Los datos compartidos se limitan a lo que cada servicio necesita para funcionar.</p>
+    <div class="data-card">
+      <p><strong>Photon Engine (Photon Fusion y Photon Voice)</strong></p>
+      <p>
+        Proporciona la sincronización del estado multijugador en tiempo real y el chat de voz en sesión. Para conectar
+        a los jugadores, Photon puede procesar datos técnicos como tu dirección IP y un identificador de sesión/sala.
+        Consulta la <a href="https://www.photonengine.com/en-US/Photon/modal/privacy" target="_blank" rel="noopener">política de privacidad de Photon</a>.
+      </p>
+    </div>
+    <div class="data-card">
+      <p><strong>Meta Platform (Oculus)</strong></p>
+      <p>
+        Proporciona autenticación del dispositivo, anchors espaciales y realidad mixta por passthrough. Regida por la
+        <a href="https://www.meta.com/legal/quest/privacy-policy/" target="_blank" rel="noopener">política de privacidad de Meta</a>.
+      </p>
+    </div>
+    <div class="data-card">
+      <p><strong>AppSheet (Google)</strong></p>
+      <p>
+        Gestiona las sesiones y turnos de juego. Regida por la
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.
+      </p>
+    </div>
+
+    <h2><span class="num">05</span> Permisos del dispositivo</h2>
+    <ul>
+      <li><strong>Internet</strong> — conexión multijugador (Photon) y gestión de sesiones (AppSheet).</li>
+      <li><strong>Micrófono</strong> — chat de voz entre jugadores (Photon Voice).</li>
+      <li><strong>Datos espaciales / Scene</strong> — escaneo de la habitación para detectar techo y paredes.</li>
+      <li><strong>Eye tracking (opcional)</strong> — no se usa activamente; puede solicitarlo el SDK de Meta.</li>
+    </ul>
+    <p>Puedes gestionar estos permisos en cualquier momento desde los ajustes de tu Meta Quest.</p>
+
+    <h2><span class="num">06</span> Retención y eliminación de datos</h2>
+    <ul>
+      <li>Registros de sesión en AppSheet: solo se almacena el estado final; no se acumulan datos de juego individuales.</li>
+      <li>Anchors espaciales: temporales y vinculados a la sesión activa; se eliminan al cerrar la sesión.</li>
+      <li>Preferencias locales: persisten en el dispositivo hasta que desinstalas la App o limpias las preferencias desde el panel de administración.</li>
+      <li>Registro de diagnóstico: se sobrescribe en cada arranque y nunca se transmite.</li>
+    </ul>
+    <p>Para solicitar la eliminación de cualquier dato asociado a ti, contáctanos en la dirección de abajo.</p>
+
+    <h2><span class="num">07</span> Privacidad de menores</h2>
+    <p>
+      La App está pensada para contextos educativos y culturales. No está dirigida específicamente a menores de 13 años,
+      aunque puede usarse en entornos supervisados con fines pedagógicos. No recopilamos conscientemente datos personales
+      de menores.
+    </p>
+
+    <h2><span class="num">08</span> Cambios en esta política</h2>
+    <p>
+      Podemos actualizar esta Política de Privacidad ocasionalmente. Cuando lo hagamos, actualizaremos la fecha de
+      "Última actualización" de arriba. El uso continuado de la App tras la entrada en vigor de los cambios constituye
+      la aceptación de la política actualizada.
+    </p>
+
+    <h2><span class="num">09</span> Contacto</h2>
+    <p>
+      <strong>Dane Val Devs</strong><br>
+      Email: <a href="mailto:danevaldevs@outlook.es">danevaldevs@outlook.es</a>
+    </p>
+
+    <footer>© 2026 Dane Val Devs. Todos los derechos reservados.</footer>
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+    document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+    document.getElementById('btn-es').setAttribute('aria-pressed', lang === 'es');
+  }
+</script>
+</body>
+</html>
